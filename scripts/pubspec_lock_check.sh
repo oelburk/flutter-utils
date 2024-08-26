@@ -18,6 +18,28 @@
 # - curl: Command-line tool for transferring data with URLs (https://curl.se/)
 # Install the dependencies using your package manager (e.g., apt, yum, brew)
 
+# Install dependencies on macOS:
+# brew install jq curl
+
+# Install dependencies on Ubuntu:
+# sudo apt-get install jq curl
+
+# Install dpendencies on Windows (using chocolatey):
+# choco install jq curl
+
+# Usage:
+# 1. Make the script executable: chmod +x pubspec_lock_check.sh
+# 2. Run the script: ./pubspec_lock_check.sh
+# 3. Follow the prompts to select the type of dependencies to filter
+
+# Options:
+# -v, --verbose    Enable verbose mode to show debug information
+# -h, --help       Show help message and exit
+
+# Example:
+# ./pubspec_lock_check.sh -v
+# ./pubspec_lock_check.sh /path/to/pubspec lock file/
+
 #------------------------------------------------------------------------------------------------------------
 
 # Default path for pubspec.lock file is the current directory
