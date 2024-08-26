@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Pubspec Lockfile Version Check Script
+# Version: 1.0
 #------------------------------------------------------------------------------------------------------------
 # Author: 
 # Alfred Tång (@oelburk) - github.com/oelburk
