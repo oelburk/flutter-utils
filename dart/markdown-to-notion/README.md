@@ -60,7 +60,7 @@ dart markdown_to_notion.dart document.md notion_output.txt
 ### 📋 Lists
 
 ```markdown
-- Unordered list → • Unordered list
+- Unordered list → - Unordered list
 1. Ordered list → 1. Ordered list
   - Nested items → Proper indentation preserved
 ```
@@ -115,10 +115,10 @@ Check out [Google](https://google.com) for more info.
 
 This is a **sample** project with *various* formatting.
 
-• Task 1
-• Task 2
-  • Subtask A
-  • Subtask B
+- Task 1
+- Task 2
+  - Subtask A
+  - Subtask B
 
 Check out [Google](https://google.com) for more info.
 ```
@@ -133,7 +133,7 @@ Check out [Google](https://google.com) for more info.
 
 - 🎯 The converter optimizes for Notion's specific markdown flavor
 - 📐 Headers beyond H3 are converted to bold H3 headers
-- 🔸 Unordered lists use bullet points (•) instead of hyphens
+- 🔸 Unordered lists use dashes (-) for better Notion compatibility
 - 📊 Tables are formatted with clear headers and separators
 - 🌈 Code blocks preserve language information for syntax highlighting
 - 🧹 Excessive whitespace is cleaned up for better readability

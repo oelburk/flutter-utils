@@ -6,7 +6,7 @@
 
 ### 🔧 Scripts
 
-- 📦 `pubspec_lock_check.sh` - Lists dependencies from the pubspec.lock file if they have newer versions available
+- 📦 `pubspec_lock_check.sh` - Lists dependencies from the pub spec.lock file if they have newer versions available
 
 ### 🎯 Dart Tools
 
