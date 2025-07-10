@@ -12,10 +12,9 @@ void main(List<String> args) {
   }
 
   final inputFile = args[0];
-  final outputFile =
-      args.length > 1
-          ? args[1]
-          : '${inputFile.replaceAll('.md', '')}_notion.txt';
+  final outputFile = args.length > 1
+      ? args[1]
+      : '${inputFile.replaceAll('.md', '')}_notion.txt';
 
   try {
     final content = File(inputFile).readAsStringSync();
@@ -119,13 +118,13 @@ String convertLists(String content) {
   for (var i = 0; i < lines.length; i++) {
     final line = lines[i];
 
-    // Convert unordered lists
+    // Convert unordered lists - Notion works better with dashes
     if (line.trim().startsWith('- ') ||
         line.trim().startsWith('* ') ||
         line.trim().startsWith('+ ')) {
       final indent = line.indexOf(line.trim());
       final text = line.trim().substring(2);
-      result.add('${' ' * indent}• $text');
+      result.add('${' ' * indent}- $text');
     }
     // Convert ordered lists
     else if (RegExp(r'^\s*\d+\.\s+').hasMatch(line)) {
@@ -148,14 +147,13 @@ String convertLists(String content) {
 
 String convertLinks(String content) {
   // Convert markdown links [text](url) to Notion format
-  content = content.replaceAllMapped(
-    RegExp(r'\[([^\]]+)\]\(([^)]+)\)'),
-    (match) {
-      final text = match.group(1)!;
-      final url = match.group(2)!;
-      return '[$text]($url)';
-    },
-  );
+  content = content.replaceAllMapped(RegExp(r'\[([^\]]+)\]\(([^)]+)\)'), (
+    match,
+  ) {
+    final text = match.group(1)!;
+    final url = match.group(2)!;
+    return '[$text]($url)';
+  });
 
   return content;
 }
@@ -211,12 +209,11 @@ String convertTables(String content) {
       }
 
       // Parse table row
-      final cells =
-          line
-              .split('|')
-              .map((cell) => cell.trim())
-              .where((cell) => cell.isNotEmpty)
-              .toList();
+      final cells = line
+          .split('|')
+          .map((cell) => cell.trim())
+          .where((cell) => cell.isNotEmpty)
+          .toList();
       tableRows.add(cells);
     } else {
       if (inTable) {
@@ -252,8 +249,9 @@ List<String> formatTableForNotion(List<List<String>> tableRows) {
       if (i >= columnWidths.length) {
         columnWidths.add(0);
       }
-      columnWidths[i] =
-          columnWidths[i] > row[i].length ? columnWidths[i] : row[i].length;
+      columnWidths[i] = columnWidths[i] > row[i].length
+          ? columnWidths[i]
+          : row[i].length;
     }
   }
 

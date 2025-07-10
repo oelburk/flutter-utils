@@ -5,12 +5,12 @@ This is a **comprehensive test file** to demonstrate the *markdown to Notion* co
 ## Text Formatting Examples
 
 ### Basic Formatting
-• **Bold text** using double asterisks
-• *Italic text* using single asterisks
-• ~~Strikethrough text~~ using tildes
-• `Inline code` using backticks
-• **Bold with *nested italic* text**
-• *Italic with **nested bold** text*
+- **Bold text** using double asterisks
+- *Italic text* using single asterisks
+- ~~Strikethrough text~~ using tildes
+- `Inline code` using backticks
+- **Bold with *nested italic* text**
+- *Italic with **nested bold** text*
 
 ### Mixed Formatting
 You can combine formatting like **bold and `code`** or *italic and ~~strikethrough~~* text.
@@ -27,13 +27,13 @@ You can combine formatting like **bold and `code`** or *italic and ~~strikethrou
 ## Lists Examples
 
 ### Unordered Lists
-• First level item
-• Another first level item
-  • Second level nested item
-  • Another second level item
-    • Third level nested item
-    • Another third level item
-• Back to first level
+- First level item
+- Another first level item
+  - Second level nested item
+  - Another second level item
+    - Third level nested item
+    - Another third level item
+- Back to first level
 
 ### Ordered Lists
 1. First numbered item
@@ -46,19 +46,19 @@ You can combine formatting like **bold and `code`** or *italic and ~~strikethrou
 
 ### Mixed Lists
 1. Numbered item with sub-bullets:
-   • Bullet point
-   • Another bullet point
+   - Bullet point
+   - Another bullet point
 2. Another numbered item
-   • More bullets
+   - More bullets
      1. Nested numbers
      2. More nested numbers
 
 ## Links and References
 
 Here are some useful links:
-• [Google](https://www.google.com)
-• [GitHub](https://github.com)
-• [Notion](https://www.notion.so)
+- [Google](https://www.google.com)
+- [GitHub](https://github.com)
+- [Notion](https://www.notion.so)
 
 You can also have inline links like [this one](https://example.com) within sentences.
 
@@ -103,8 +103,8 @@ print(f"Sum: {result}")
 ```
 This is a plain code block
 without syntax highlighting
-  • It preserves formatting
-  • And indentation
+  - It preserves formatting
+  - And indentation
 ```
 
 ## Tables
@@ -148,11 +148,11 @@ Documentation  | ❌ Not Started  | Low      | API docs required
 
 ## Special Characters and Symbols
 
-• Checkmarks: ✅ ❌ ⚠️
-• Arrows: → ← ↑ ↓ ↔
-• Bullets: • ◦ ▪ ▫
-• Math: ± × ÷ ≈ ≠ ≤ ≥
-• Currency: $ € £ ¥ ₹
+- Checkmarks: ✅ ❌ ⚠️
+- Arrows: → ← ↑ ↓ ↔
+- Bullets: • ◦ ▪ ▫
+- Math: ± × ÷ ≈ ≠ ≤ ≥
+- Currency: $ € £ ¥ ₹
 
 ## Real-World Example
 
@@ -191,10 +191,10 @@ lib/
 ```
 
 ### **Known Issues**
-• [ ] Map performance on older devices
-• [ ] Authentication timeout handling
-• [x] Push notification setup
-• [x] App store deployment
+- [ ] Map performance on older devices
+- [ ] Authentication timeout handling
+- [x] Push notification setup
+- [x] App store deployment
 
 ### **Next Steps**
 1. Complete remaining modules
